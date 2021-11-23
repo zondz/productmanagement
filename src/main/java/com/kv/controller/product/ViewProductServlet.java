@@ -20,6 +20,7 @@ public class ViewProductServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/product/ViewProduct.jsp");
 		List<Product> allProduct = productService.findAll();
 		req.setAttribute("products", allProduct);

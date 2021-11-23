@@ -23,10 +23,10 @@
         <a class="nav-link" href="/home/viewproduct">View product<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Add product</a>
+        <a class="nav-link" href="/product/AddProduct.jsp">Add product</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Search</a>
+        <a class="nav-link" href="/product/searchproduct/SearchProduct.jsp">Search</a>
       </li>
       
     </ul>

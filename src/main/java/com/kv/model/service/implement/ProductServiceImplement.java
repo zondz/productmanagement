@@ -21,4 +21,34 @@ public class ProductServiceImplement implements ProductService {
 		return productDAO.findAll();
 	}
 
+	@Override
+	public boolean add(Product entity) {
+
+		return productDAO.add(entity);
+	}
+
+	@Override
+	public Product findById(Integer id) {
+		// TODO Auto-generated method stub
+		return productDAO.findById(id);
+	}
+
+	@Override
+	public boolean update(Product entity) {
+		// TODO Auto-generated method stub
+		return productDAO.update(entity);
+	}
+
+	@Override
+	public boolean deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		return productDAO.deleteById(id);
+	}
+
+	@Override
+	public List<Product> findByProductName(String keyword) {
+		// TODO Auto-generated method stub
+		return productDAO.findByProductName(keyword);
+	}
+
 }
