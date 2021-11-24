@@ -10,7 +10,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -29,11 +29,10 @@
 List<Product> allProducts =(List<Product>) request.getAttribute("products");
 List<List<Product>> pages =  Helper.getPages(allProducts, 5);
 if(session.getAttribute("pagenumber")==null){
-	System.out.println(session.getAttribute("pagenumber"));
+	
 	session.setAttribute("pagenumber", 0);
 }
 
-System.out.println("Request page number : "+session.getAttribute("pagenumber"));
 
 %>
 <div class="container-xl">

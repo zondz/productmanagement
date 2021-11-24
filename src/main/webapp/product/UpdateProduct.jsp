@@ -23,9 +23,22 @@ margin-left: 36%
 </head>
 
 <%
-int id =Integer.parseInt(request.getParameter("id")) ;
+String wrongUpdateId = request.getParameter("productid");
+
+String id = request.getParameter("id");
+
+
+//int id =Integer.parseInt(request.getParameter("id")) ;
 ProductService productService = new ProductServiceImplement();
-Product updateProduct = productService.findById(id);
+Product updateProduct  = null;
+if(wrongUpdateId!=null){
+	updateProduct = productService.findById(Integer.parseInt(wrongUpdateId));
+	
+}else{
+	updateProduct= productService.findById(Integer.parseInt(id));
+
+}
+
 %>
 <body>
 <%@ include file="/Header.jsp" %>

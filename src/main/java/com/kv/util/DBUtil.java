@@ -34,10 +34,4 @@ public class DBUtil {
 
 	}
 
-	public static void main(String[] args) {
-		DBUtil db = DBUtil.getInstance();
-
-		System.out.println(db.connection != null);
-	}
-
 }

@@ -15,7 +15,6 @@ public class UserServiceImplement implements UserService {
 	@Override
 	public User checkLogin(User user) {
 		User result = userDAO.findByUserNameAndPassword(user);
-		System.out.println("result : " + result);
 		return result;
 
 	}

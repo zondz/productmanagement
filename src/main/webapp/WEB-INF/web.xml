@@ -3,4 +3,12 @@
   <display-name>ProductManagement</display-name>  
  
 
+<error-page>
+<error-code>404</error-code>
+<location>/handle-404-error</location>
+</error-page>
+<error-page>
+<error-code>500</error-code>
+<location>/handle-500-error</location>
+</error-page>
 </web-app>

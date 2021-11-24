@@ -18,4 +18,20 @@ public class Helper {
 			pages.add(list.subList(pageNum * pageSize, Math.min(++pageNum * pageSize, list.size())));
 		return pages;
 	}
+
+	public static boolean validateInputFloat(String key) throws Exception {
+		boolean result = false;
+		try {
+
+			Float.parseFloat(key);
+			result = true;
+
+		} catch (Exception e) {
+			throw new Exception("input wrong format for number !");
+		}
+
+		return result;
+
+	}
+
 }
